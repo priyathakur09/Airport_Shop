@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{shop_name}",
+ "creation": "2024-11-11 20:39:51.163904",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "shop_name",
+  "airport",
+  "monthly_rent",
+  "column_break_voor",
+  "name_of_tenant",
+  "email",
+  "payment_status"
+ ],
+ "fields": [
+  {
+   "fetch_from": "shop_name.name1",
+   "fieldname": "name_of_tenant",
+   "fieldtype": "Data",
+   "label": "Name of Tenant"
+  },
+  {
+   "fetch_from": "shop_name.airport",
+   "fieldname": "airport",
+   "fieldtype": "Data",
+   "label": "Airport"
+  },
+  {
+   "fieldname": "column_break_voor",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "airport.shop_name",
+   "fieldname": "shop_name",
+   "fieldtype": "Link",
+   "label": "Shop Name",
+   "options": "Airport Shops"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "Unpaid\nPaid"
+  },
+  {
+   "fetch_from": "shop_name.monthly_rent",
+   "fieldname": "monthly_rent",
+   "fieldtype": "Currency",
+   "label": "Monthly Rent"
+  },
+  {
+   "fetch_from": "shop_name.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-13 19:01:50.413332",
+ "modified_by": "Administrator",
+ "module": "Airport Shop Management",
+ "name": "Rent Payment",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

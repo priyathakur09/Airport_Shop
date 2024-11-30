@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{###}",
+ "creation": "2024-11-28 18:29:23.206986",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_section",
+  "first_name",
+  "last_name",
+  "full_name",
+  "details_section",
+  "price_of_commodity",
+  "quantity_of_commodity",
+  "total_price",
+  "task_section",
+  "membership"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_section",
+   "fieldtype": "Section Break",
+   "label": "Customer"
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "price_of_commodity",
+   "fieldtype": "Currency",
+   "label": "Price of Commodity"
+  },
+  {
+   "fieldname": "quantity_of_commodity",
+   "fieldtype": "Int",
+   "label": "Quantity of Commodity"
+  },
+  {
+   "fieldname": "total_price",
+   "fieldtype": "Currency",
+   "label": "Total Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "task_section",
+   "fieldtype": "Section Break",
+   "label": "Task"
+  },
+  {
+   "fieldname": "membership",
+   "fieldtype": "Select",
+   "label": "Membership",
+   "options": "Not a Member\nBronze\nSilver\nGold\nPlatinum\nDiamond"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-29 11:00:52.419002",
+ "modified_by": "Administrator",
+ "module": "Airport Shop Management",
+ "name": "Example Script",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

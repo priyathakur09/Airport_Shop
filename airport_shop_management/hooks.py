@@ -227,3 +227,27 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+doc_events = {
+    "Shops": {
+        "on_update": "airport_shop_management.api.calculate_shop_counts"
+    },
+    "Airports": {
+        "on_update": "airport_shop_management.api.calculate_shop_counts"
+    }
+}
+
+
